@@ -17,3 +17,10 @@ Thumbs.db
 
 # Logs
 *.log
+
+# Conversational Artifacts
+HANDOFF.md
+*.db
+*.sqlite
+agent_memory.db
+.andy-os/

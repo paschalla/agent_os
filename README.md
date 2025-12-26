@@ -97,3 +97,9 @@ We welcome contributions! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for deta
 ## 📄 License
 
 Distributed under the MIT License. See `LICENSE` for more information.
+
+---
+
+<div align="center">
+  <p><sub>Developed with the assistance of <b>Google Gemini 3 Pro</b> and <b>Claude 4.5 Opus</b>.</sub></p>
+</div>
