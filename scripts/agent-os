@@ -1,0 +1,2 @@
+#!/bin/bash
+exec /home/andy/proj/agent-os/venv/bin/python /home/andy/proj/agent-os/main.py "$@"

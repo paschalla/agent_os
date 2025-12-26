@@ -1,0 +1,16 @@
+[Unit]
+Description=Agent-OS Service
+After=network.target
+
+[Service]
+Type=simple
+User=andy
+WorkingDirectory=/home/andy/proj/agent-os
+ExecStart=/home/andy/proj/agent-os/scripts/launch_server.sh
+Restart=always
+RestartSec=10
+Environment=PATH=/usr/bin:/usr/local/bin
+Environment=NODE_ENV=development
+
+[Install]
+WantedBy=multi-user.target

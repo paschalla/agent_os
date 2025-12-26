@@ -1,0 +1,9 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Agent-OS
+Comment=Agentic Operating System Interface
+Exec=/home/andy/proj/agent-os/scripts/launch_desktop.sh
+Icon=/home/andy/proj/agent-os/frontend/public/vite.svg
+Terminal=false
+Categories=Utility;Development;
