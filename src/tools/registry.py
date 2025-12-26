@@ -1,5 +1,6 @@
 from .shell import ShellTool
 from .fs import FileTool
+from .knowledge import search_knowledge_base
 
 class ToolRegistry:
     def __init__(self):
@@ -11,7 +12,8 @@ class ToolRegistry:
             "read_file": self.fs.read_file,
             "write_file": self.fs.write_file,
             "list_dir": self.fs.list_dir,
-            "find_files": self.fs.find_files
+            "find_files": self.fs.find_files,
+            "search_knowledge_base": search_knowledge_base
         }
 
     def get_tool(self, name: str):

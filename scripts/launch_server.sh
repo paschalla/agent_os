@@ -27,6 +27,8 @@ fi
 # Cleanup function
 cleanup() {
     echo "Shutting down Agent-OS Server..."
+    echo "Auto-exporting conversation history..."
+    python3 scripts/export_chats.py
     kill $(jobs -p) 2>/dev/null
     exit
 }
