@@ -64,4 +64,19 @@ If the system becomes sluggish or IDE processes hang:
 
 (See `.agent/workflows` for automated scripts)
 
-- `maintenance.md`: Cleans up heavy processes.
+---
+
+## 🤖 5. AI Assistant Context (Global Memory)
+
+To ensure any AI assistant (Antigravity/Gemini) understands this environment immediately, add the following to your **Custom Instructions** or **Global Memory**:
+
+```markdown
+# Agent-OS Configuration (Live)
+
+- **Model Host**: Local Docker Container (`ollama`) on `aw`.
+- **Ollama CLI**: `/usr/local/bin/ollama` (Wrapper for Data Transparency).
+- **Ports**: API (8000), Frontend (5173).
+- **Maintenance**: `@agent /maintenance` kills dev processes.
+- **Knowledge**: `scripts/export_chats.py` creates knowledge base in `exports/`.
+- **Policy**: Zero-Trust Library Install. No `venv` in Git.
+```
