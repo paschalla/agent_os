@@ -66,17 +66,19 @@ If the system becomes sluggish or IDE processes hang:
 
 ---
 
-## 🤖 5. AI Assistant Context (Global Memory)
+## 🤖 5. AI System Context (Global Memory)
 
-To ensure any AI assistant (Antigravity/Gemini) understands this environment immediately, add the following to your **Custom Instructions** or **Global Memory**:
+To ensure immediate alignment, add this efficient block to your **Custom Instructions**:
 
 ```markdown
-# Agent-OS Configuration (Live)
+# ⚡ Agent-OS Core Protocol
 
-- **Model Host**: Local Docker Container (`ollama`) on `aw`.
-- **Ollama CLI**: `/usr/local/bin/ollama` (Wrapper for Data Transparency).
-- **Ports**: API (8000), Frontend (5173).
-- **Maintenance**: `@agent /maintenance` kills dev processes.
-- **Knowledge**: `scripts/export_chats.py` creates knowledge base in `exports/`.
-- **Policy**: Zero-Trust Library Install. No `venv` in Git.
+**System State**: Local-First | Docker-Backed | Knowledge-Driven
+
+- **Infrastructure**: Ollama (Docker) running on `aw` (localhost:11434).
+- **Tools**: Native `ollama` CLI wrapper ready.
+- **Ops**:
+  - **Clean**: `@agent /maintenance` (Kills vite/uvicorn).
+  - **Memory**: Knowledge auto-exports to `exports/`. Check it first.
+- **Code Law**: Zero-Trust library installs. No `venv` in Git.
 ```
