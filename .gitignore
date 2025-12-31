@@ -14,6 +14,7 @@ frontend/.env.local
 # System
 .DS_Store
 Thumbs.db
+.vscode/
 
 # Logs
 *.log
@@ -24,3 +25,8 @@ HANDOFF.md
 *.sqlite
 agent_memory.db
 .andy-os/
+.vscode/settings.json
+exports/chat_2_2025-12-26.md
+exports/chat_3_2025-12-26.md
+exports/chat_4_2025-12-27.md
+exports/chat_5_2025-12-29.md
